@@ -1,0 +1,7 @@
+C:\git\ContainerApp\app\ContainerApp.exe
+C:\git\ContainerApp\app\appsettings.Development.json
+C:\git\ContainerApp\app\appsettings.json
+C:\git\ContainerApp\app\ContainerApp.dll
+C:\git\ContainerApp\app\ContainerApp.deps.json
+C:\git\ContainerApp\app\ContainerApp.runtimeconfig.json
+C:\git\ContainerApp\app\ContainerApp.pdb

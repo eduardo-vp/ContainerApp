@@ -1,0 +1,7 @@
+C:\app\ContainerApp.exe
+C:\app\appsettings.Development.json
+C:\app\appsettings.json
+C:\app\ContainerApp.dll
+C:\app\ContainerApp.deps.json
+C:\app\ContainerApp.runtimeconfig.json
+C:\app\ContainerApp.pdb

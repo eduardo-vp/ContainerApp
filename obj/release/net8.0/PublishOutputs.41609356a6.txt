@@ -1,0 +1,7 @@
+C:\git\ContainerApp\bin\release\net8.0\publish\ContainerApp.exe
+C:\git\ContainerApp\bin\release\net8.0\publish\appsettings.Development.json
+C:\git\ContainerApp\bin\release\net8.0\publish\appsettings.json
+C:\git\ContainerApp\bin\release\net8.0\publish\ContainerApp.dll
+C:\git\ContainerApp\bin\release\net8.0\publish\ContainerApp.deps.json
+C:\git\ContainerApp\bin\release\net8.0\publish\ContainerApp.runtimeconfig.json
+C:\git\ContainerApp\bin\release\net8.0\publish\ContainerApp.pdb
