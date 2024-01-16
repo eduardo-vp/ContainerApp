@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aspnet-test
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: aspnet-test
+  template:
+    metadata:
+      labels:
+        app: aspnet-test
+    spec:
+      containers:
+      - name: aspnet-test
+        image: docker.io/eduardovp97/aspnet-test:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+          name: aspnet-test
+        resources:
+          requests:
+            cpu: 250m
+            memory: 512Mi
+          limits:
+            cpu: 250m
+            memory: 512Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aspnet-test
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: aspnet-test
+  type: LoadBalancer

@@ -5,12 +5,12 @@ Random rnd = new Random();
 
 app.MapGet("/", () => {
     // simulate light work
-    int sum = 0;
+    int hash = 0;
     int it = rnd.Next(1000);
     for (int i = 0; i < it; ++i) {
-        sum += i;
+        hash ^= rnd.Next(1 << 20);
     }
-    return "Sum is " + sum;
+    return "Hash is " + hash + "\n";
 });
 
 app.Run();

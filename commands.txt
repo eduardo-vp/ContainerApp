@@ -1,0 +1,18 @@
+# Allow external traffic
+
+By default, the pod is only accessible by its internal IP within the cluster. In order to make the hello-dotnet container accessible from outside the kubernetes virtual network, you have to expose the pod as a kubernetes service.
+
+$ kubectl expose deployment <deployment> --type="LoadBalancer" --port=<port>
+
+To find the publicly-accessible IP address of the service, simply request kubectl to list all the cluster services:
+
+$ kubectl get services
+
+Manually scaling the number of replicas
+
+$ kubectl scale deployment <deployment> --replicas=4
+
+Verify number of pods
+
+$ kubectl get pods
+
